@@ -3,7 +3,7 @@ Moneysocket Beacon Encoder and Decoder App
 
 This is a simple frontend for encoding and decoding beacons using the [js-moneysocket](https://github.com/moneysocket/js-moneysocket) library.
 
-It is hosted on the web for your convenience at [https://socket.money/codec](https://socket.money/codec).
+It is hosted on the web for your convenience at [https://socket.money/beacon](https://socket.money/beacon).
 
 
 Dependencies
