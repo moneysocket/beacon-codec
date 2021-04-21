@@ -45,25 +45,6 @@ gulp.task('imageMin', function imageMin(cb) {
 
 ///////////////////////////////////////////////////////////////////////////////
 
-gulp.task('full', function () {
-    var b = browserify({
-      entries: './src/js/codec.js',
-      debug: true
-    });
-
-    return b.bundle()
-      .pipe(source('./codec.js'))
-      .pipe(buffer())
-      .pipe(sourcemaps.init({loadMaps: true}))
-      .pipe(babel({
-          presets: ['@babel/env']
-      }))
-      .pipe(uglify())
-      .on('error', log.error)
-      .pipe(sourcemaps.write('./'))
-      .pipe(gulp.dest('./htdocs/js/'));
-});
-
 gulp.task('codecQuick', function () {
     var b = browserify({
       entries: './src/js/codec.js',
